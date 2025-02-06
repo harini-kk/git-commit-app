@@ -40,7 +40,11 @@ export default function Home() {
       {info && (
         <div className="flex flex-col md:flex-row gap-4 justify-between mb-6 font-arial">
           <div className="flex items-start space-x-4 w-3/5">
-            <FaUserCircle className="w-[49px] h-[49px] text-primary" />
+            <img
+            src={info?.author?.avatar_url}
+            alt="Author Avatar"
+            className="w-[49px] h-[49px] rounded-full object-cover"
+            />
             <div>
               <h2 className="text-base font-bold text-primary">{info.message}</h2>
               <h3 className="text-sm text-lightGrey mt-2">
