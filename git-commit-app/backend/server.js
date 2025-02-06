@@ -35,6 +35,7 @@ app.get('/repositories/:owner/:repository/commits/:oid', async (req, res) => {
         name: commitData.commit.author.name,
         date: commitData.commit.author.date,
         email: commitData.commit.author.email,
+        avatar_url: commitData.author.avatar_url,
       },
       committer: {
         name: commitData.commit.committer.name,
