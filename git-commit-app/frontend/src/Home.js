@@ -72,7 +72,7 @@ export default function Home() {
       ) : diff?.length === 0 ? (
         <p className="text-gray-500">No file changes detected.</p>
       ) : (
-        <Accordion.Root type="single" collapsible className="font-arial tracking-4p">
+        <Accordion.Root type="multipe" collapsible className="font-arial tracking-4p">
           {diff.map((file, index) => (
             <Accordion.Item key={index} value={`file-${index}`} className="mb-5">
               <Accordion.Header>
