@@ -36,7 +36,7 @@ export default function Home() {
   const { diff, info } = commitData;
 
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4 py-8 bg-[#FBFDFF]">
       {info && (
         <div className="flex flex-col md:flex-row gap-4 justify-between mb-6 font-arial">
           <div className="flex items-start space-x-4 w-3/5">
