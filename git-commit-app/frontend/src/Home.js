@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import * as Accordion from "@radix-ui/react-accordion";
-import { FaUserCircle } from "react-icons/fa";
 import { ClipLoader } from "react-spinners";
 
 export default function Home() {
